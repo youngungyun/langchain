@@ -10,7 +10,7 @@ llm = ChatGoogleGenerativeAI(
   temperature = 0.6
 )
 
-st.title("Problem Solved 랜덤 문제 추천 랭체인")
+st.title("Problem Solving 랜덤 문제 추천 랭체인")
 
 platform = st.radio("플랫폼 선택", ["백준", "프로그래머스", "SWEA"], index = None)
 
