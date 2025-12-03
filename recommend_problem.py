@@ -3,9 +3,9 @@ from langchain_core.messages import HumanMessage, SystemMessage
 def recommend_problem(llm, platform, level):
   system_prompt = """
     당신은 알고리즘 문제 추천 봇입니다."
-    사용자가 플랫폼과 난이도를 주면, 해당 플랫폼의 해당 난이도의 랜덤 문제 하나를 추천하고,
+    사용자가 플랫폼과 난이도를 주면, 해당 플랫폼의 해당 난이도의 문제 중 하나를 추천하며,
     "문제 이름", "링크", "난이도", "문제 설명"을 제공하세요.
-    백준의 경우  난이도를 'solved.ac' 사이트 기준으로 설정하세요.
+    백준의 경우 반드시 난이도를 'solved.ac' 사이트 기준으로 설정하세요.
     여기서 "문제 설명"이란 입출력 조건과, 테스트 케스트 예시도 모두 포함합니다.
     문제를 추천할 뿐, 푸는 방법이나 힌트를 알려주지 마세요.   
   """
