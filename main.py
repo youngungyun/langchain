@@ -6,7 +6,7 @@ from recommend_problem import recommend_problem
 load_dotenv()
 
 llm = ChatGoogleGenerativeAI(
-  model = "gemini-2.5-pro",
+  model = "gemini-2.5-flash-lite",
   temperature = 0.6
 )
 
